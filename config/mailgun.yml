@@ -1,0 +1,11 @@
+development:
+  api_key: 'key-7a8e204f9fdf29724924e72d7f8cf963'
+  domain: 'sandbox6a1139cfa72545b098203f28a6017ebd.mailgun.org'
+  username: 'postmaster@sandbox6a1139cfa72545b098203f28a6017ebd.mailgun.org'
+  password: '9aa759a5adb5a3ef58779765b6002d36'
+
+test:
+  api_key: 'key-7a8e204f9fdf29724924e72d7f8cf963'
+
+production:
+  api_key: 'key-7a8e204f9fdf29724924e72d7f8cf963'
