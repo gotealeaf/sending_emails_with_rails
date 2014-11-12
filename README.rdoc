@@ -1,28 +1,12 @@
 == README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Simple application for sending mails from rails application. App uses following: 
 
-Things you may want to cover:
+* Action Mailer 
 
-* Ruby version
+* SMTP with Gmail and Mailgun
 
-* System dependencies
+* Mailgun API via mailgun-ruby
 
-* Configuration
+* Action Mailer Preview for previewing emails. 
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
