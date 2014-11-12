@@ -1,4 +1,13 @@
-# Add configuration values here, as shown below.
+# Add the required credentials here and rename the file application.yml.  
+
+api_key: ''
+domain: ''
+username: ''
+password: ''
+gmail_username: ''
+gmail_password: ''
+
+# Examples
 #
 # pusher_app_id: "2954"
 # pusher_key: 7381a978f7dd7f9a1117
