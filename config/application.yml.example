@@ -1,4 +1,4 @@
-# Add the required credentials here and rename the file application.yml.  
+# Add the required credentials here and rename the file application.yml.   
 
 api_key: ''
 domain: ''
