@@ -34,16 +34,16 @@ Rails.application.configure do
   config.assets.raise_runtime_errors = true
   
   config.action_mailer.delivery_method = :smtp
-  # SMTP settings for mailgun
-  config.action_mailer.smtp_settings = {
-    :authentication => :plain,
-    :address => "smtp.mailgun.org",
-    :port => 587,
-    :domain => ENV['domain'],
-    :user_name => ENV['username'],
-    :password => ENV['password']
-  }
-  # SMTP settings for gmail 
+  # Uncomment following to use SMTP settings for mailgun
+  # config.action_mailer.smtp_settings = {
+  #   :authentication => :plain,
+  #   :address => "smtp.mailgun.org",
+  #   :port => 587,
+  #   :domain => ENV['domain'],
+  #   :user_name => ENV['username'],
+  #   :password => ENV['password']
+  # }
+  # Uncomment following to use SMTP settings for gmail 
   # config.action_mailer.smtp_settings = {
   #   :address              => "smtp.gmail.com",
   #   :port                 => 587,
