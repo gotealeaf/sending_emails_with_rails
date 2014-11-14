@@ -8,5 +8,4 @@ Simple application for sending mails from rails application. App uses following:
 
 * Mailgun API via mailgun-ruby
 
-* Action Mailer Preview for previewing emails. 
-
+* Action Mailer Preview for previewing emails.
