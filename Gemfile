@@ -39,3 +39,9 @@ gem 'spring',        group: :development
 # gem 'debugger', group: [:development, :test]
 gem 'mailgun-ruby', '~>1.0.2', require: 'mailgun'
 gem "figaro"
+
+group :production do
+  gem 'rails_12factor', '0.0.2'
+  gem 'pg'
+end
+
