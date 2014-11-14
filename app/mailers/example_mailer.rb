@@ -13,14 +13,14 @@ class ExampleMailer < ActionMailer::Base
     
     # Uncomment the following when using mailgun-ruby
 
-    # mg_client = Mailgun::Client.new ENV['api_key']
+    mg_client = Mailgun::Client.new ENV['api_key']
 
-  	# message_params = {:from    => 'ENV['gmail_username'],
-  	#                   :to      => @user.email,
-  	#                   :subject => 'Sample Mail using Mailgun API',
-  	#                   :text    => 'This mail is sent using Mailgun API via mailgun-ruby'}
+  	message_params = {:from    => ENV['gmail_username'],
+  	                  :to      => @user.email,
+  	                  :subject => 'Sample Mail using Mailgun API',
+  	                  :text    => 'This mail is sent using Mailgun API via mailgun-ruby'}
 
-  	# mg_client.send_message ENV['domain'], message_params
+  	mg_client.send_message ENV['domain'], message_params
 
     # End 
   end
