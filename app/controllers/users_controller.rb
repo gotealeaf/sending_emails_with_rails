@@ -31,13 +31,12 @@ class UsersController < ApplicationController
 
         # Sends email to user when user is created.
       
-        # ExampleMailer.sample_email(@user.email).delay.deliver
-        # ExampleMailer.sample_email(@user).deliver_later
-        # SendEmailJob.new(@user.email).enqueue(wait: 10.seconds)
-        # puts @user.email.to_s
+        # To send emails without Action Job
+        # ExampleMailer.sample_email(@user.email).deliver
+
+        # To send emails using Action Jobs
         SendEmailJob.set(wait: 10.seconds).perform_later(@user)
-        # SendEmailJob.perform_later(@user)
-        # SendEmailJob.set(wait_until: 10.seconds).perform_later(@user.email)
+
         format.html { redirect_to @user, notice: 'User was successfully created.' }
         format.json { render :show, status: :created, location: @user }
       else

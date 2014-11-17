@@ -2,10 +2,8 @@ class ExampleMailer < ActionMailer::Base
   # default from: "from@example.com"
 
   def sample_email(user)
-  # def sample_email(email)
 
     @user = user
-    # @email = email
 
     # Uncomment the following when using SMTP for sending out mails
 
@@ -19,7 +17,6 @@ class ExampleMailer < ActionMailer::Base
 
   	message_params = {:from    => ENV['gmail_username'],
                       :to      => @user.email,
-  	                  # :to      => @email,
   	                  :subject => 'Sample Mail using Mailgun API',
   	                  :text    => 'Mail is sent using Mailgun API via mailgun-ruby via active job-delay-later'}
 
