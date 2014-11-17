@@ -32,28 +32,6 @@ Rails.application.configure do
   # Checks for improperly declared sprockets dependencies.
   # Raises helpful error messages.
   config.assets.raise_runtime_errors = true
+  config.active_job.queue_adapter = :delayed_job
   
-  config.action_mailer.delivery_method = :smtp
-  # Uncomment following to use SMTP settings for mailgun
-  # config.action_mailer.smtp_settings = {
-  #   :authentication => :plain,
-  #   :address => "smtp.mailgun.org",
-  #   :port => 587,
-  #   :domain => ENV['domain'],
-  #   :user_name => ENV['username'],
-  #   :password => ENV['password']
-  # }
-  # Uncomment following to use SMTP settings for gmail 
-  # config.action_mailer.smtp_settings = {
-  #   :address              => "smtp.gmail.com",
-  #   :port                 => 587,
-  #   :user_name            => ENV['gmail_username'],
-  #   :password             => ENV['gmail_password'],
-  #   :authentication       => "plain",
-  #   :enable_starttls_auto => true
-  # }
-  config.action_mailer.default_url_options = {
-    :host => '127.0.0.1',
-    :port => 3000
-  }
 end

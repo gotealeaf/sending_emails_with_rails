@@ -2,10 +2,11 @@ source 'https://rubygems.org'
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.1.1'
+# gem 'rails', '4.1.1'
+gem 'rails', github: 'rails/rails'
 gem 'pg'
 # Use SCSS for stylesheets
-gem 'sass-rails', '~> 4.0.3'
+# gem 'sass-rails', '~> 4.0.3'
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
 # Use CoffeeScript for .js.coffee assets and views
@@ -38,6 +39,7 @@ gem 'spring',        group: :development
 # gem 'debugger', group: [:development, :test]
 gem 'mailgun-ruby', '~>1.0.2', require: 'mailgun'
 gem "figaro"
+gem 'delayed_job_active_record'
 
 group :production do
   gem 'rails_12factor', '0.0.2'
