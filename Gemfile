@@ -2,9 +2,7 @@ source 'https://rubygems.org'
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.1.1'
-# For using Action Job in application 
-#gem 'rails', github: 'rails/rails'
+gem 'rails', '4.2.0.beta4'
 gem 'pg'
 # Use SCSS for stylesheets
 # gem 'sass-rails', '~> 4.0.3'
